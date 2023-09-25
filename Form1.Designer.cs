@@ -58,7 +58,6 @@
             this.label1.Size = new System.Drawing.Size(74, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nhập tên";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtNhapTen
             // 
@@ -79,7 +78,6 @@
             this.label2.Size = new System.Drawing.Size(74, 17);
             this.label2.TabIndex = 0;
             this.label2.Text = "Nhập tên";
-            this.label2.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtLapTrinh
             // 
@@ -87,7 +85,6 @@
             this.txtLapTrinh.Name = "txtLapTrinh";
             this.txtLapTrinh.Size = new System.Drawing.Size(223, 20);
             this.txtLapTrinh.TabIndex = 1;
-            this.txtLapTrinh.TextChanged += new System.EventHandler(this.txtLapTrinh_TextChanged);
             // 
             // groupBox1
             // 
@@ -193,6 +190,7 @@
             this.chkChan.TabIndex = 0;
             this.chkChan.Text = "Gạch Chân";
             this.chkChan.UseVisualStyleBackColor = true;
+            this.chkChan.CheckedChanged += new System.EventHandler(this.chkBold_CheckedChanged);
             // 
             // chkItalic
             // 
@@ -205,6 +203,7 @@
             this.chkItalic.TabIndex = 0;
             this.chkItalic.Text = "Nghiêng Italic";
             this.chkItalic.UseVisualStyleBackColor = true;
+            this.chkItalic.CheckedChanged += new System.EventHandler(this.chkBold_CheckedChanged);
             // 
             // chkBold
             // 
@@ -217,9 +216,11 @@
             this.chkBold.TabIndex = 0;
             this.chkBold.Text = "Đậm Bold";
             this.chkBold.UseVisualStyleBackColor = true;
+            this.chkBold.CheckedChanged += new System.EventHandler(this.chkBold_CheckedChanged);
             // 
             // button1
             // 
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button1.Location = new System.Drawing.Point(371, 358);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(103, 45);
